@@ -1,0 +1,110 @@
+
+
+.info-container{
+    color: #000;
+    //background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    background: #1D1D1D;
+    @media screen and (max-width: 768px){
+        padding: 100px 0;
+    }
+  }
+  
+  
+  .info-wrapper{
+    display: grid;
+    z-index: 1;
+    height: 900px;
+    width: 100%;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 100px 24px;
+    justify-content: center;
+    
+    @media screen and (max-width: 768px){
+        height: auto;
+    }
+  }
+  
+  .info-row{
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    // align-items: center;
+    // grid-template-areas: ${({imgStart}) => (imgStart ? `'col2
+    // col1'` : `'col1 col2'`)};
+  
+    // grid-template-areas: 'col1 col2';
+    grid-template-areas: 'col2 col1';
+    @media screen and (max-width: 1000px){
+        // grid-template-areas: ${({imgStart}) => (imgStart ? `'col2'
+        //  'col1'` : `'col2 col2''col1 col1'`)};
+  
+        grid-template-areas: 'col2' 'col1';
+    }
+    @media screen and (max-width: 1043px){
+        //margin: 50px;
+    }
+  }
+  
+  
+  
+  .column-1{
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col2;
+  }
+  
+  .column-2{
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col1;
+  }
+  
+  .text-wrapper{
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    @media screen and (max-width: 1043px){
+        padding-left: 50px;
+    }
+    @media screen and (max-width: 1000px){
+        padding-left: 0;
+    }
+  }
+  
+  
+  
+  .heading{
+    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 900;
+    //color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
+    color: #08FDD8;
+  
+    @media screen and (max-width: 1043px){
+        font-size: 60px;
+    }
+  
+    @media screen and (max-width: 1000px){
+        font-size: 32px;
+        font-weight: 700;
+    }
+  }
+  
+  .subtitle{
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    //color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+    color: #fff;
+  
+    @media screen and (max-width: 1000px){
+        font-size: 18px;
+    }
+  }
+  
+ 
+  
+  
