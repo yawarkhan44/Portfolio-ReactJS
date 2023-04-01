@@ -56,7 +56,7 @@ const ContactForm = () => {
                     ></textarea>
                 </div>
             </form>
-            <div class="align-right">
+            <div className="align-right">
             <button type="submit">Send Message!</button>
             </div>
             
